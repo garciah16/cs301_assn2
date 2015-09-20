@@ -3,6 +3,7 @@ package com.example.administrator.assignment2;
 import java.util.ArrayList;
 
 /**
+ * this class creates a few teams automatically to test the app functionality
  * Created by garciah16 on 9/20/2015.
  */
 public class TeamDataManager {
@@ -14,13 +15,13 @@ public class TeamDataManager {
         //create all the teams at once and add them to the array list
         soccerTeams.add(buildRSL());
         soccerTeams.add(buildPT());
-       // SoccerTeam()
     }
 
-    public ArrayList<SoccerTeam> getSoccerTeams(){
-        return soccerTeams;
-    }
+    public SoccerTeam getSoccerTeam(int element){
+        return soccerTeams.get(element);
+    }//getSoccerTeams
 
+    //build an automatic team
     private SoccerTeam buildRSL(){
         SoccerPlayer lalo = new SoccerPlayer("Lalo", "Fernandez", "Goalkeep", 1);
         SoccerPlayer tony = new SoccerPlayer("Tony", "Beltran", "Defender", 2);
@@ -43,8 +44,9 @@ public class TeamDataManager {
         rsl.addPlayer(luke);
         rsl.addPlayer(adolfo);
         return rsl;
-    }
+    }//buildRSL
 
+    //build an automatic team
     private SoccerTeam buildPT(){
         SoccerPlayer fandendo = new SoccerPlayer("Fanendo", "Adi", "Forward", 9);
         SoccerPlayer nat = new SoccerPlayer("Nat", "Borchers", "Defender", 7);
@@ -67,5 +69,6 @@ public class TeamDataManager {
         timbers.addPlayer(michael);
         timbers.addPlayer(darlington);
         return timbers;
-    }
-}
+    }//buildPT
+
+}//TeamDataManager

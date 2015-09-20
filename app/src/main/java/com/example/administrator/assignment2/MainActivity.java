@@ -23,7 +23,17 @@ public class MainActivity extends ActionBarActivity {
 
         //set up teams
         TeamDataManager teamDM = new TeamDataManager();
+        SoccerTeam rsl = teamDM.getSoccerTeam(0);
+        //display the first team on creation
         TextView teamName = (TextView) findViewById(R.id.teamName);
+        teamName.setText(rsl.teamName);
+        //display the first team stats on creation
+        TextView teamStats = (TextView) findViewById(R.id.teamStats);
+        teamStats.setText("Wins: "+ rsl.getWins()
+                        + " Losses: " + rsl.getLosses()
+                        + " Draws: " + rsl.getDraws());
+        TextView teamMembers = (TextView)findViewById(R.id.teamMembers);
+        teamMembers.setText(rsl.printRoster());
     }
 
 

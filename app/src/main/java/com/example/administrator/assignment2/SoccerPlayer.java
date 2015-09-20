@@ -1,6 +1,7 @@
 package com.example.administrator.assignment2;
 
 /**
+ * this class represents a soccer player, and the relevant stats
  * Created by garciah16 on 9/20/2015.
  */
 public class SoccerPlayer {
