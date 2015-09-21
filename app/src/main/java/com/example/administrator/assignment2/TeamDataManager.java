@@ -15,6 +15,7 @@ public class TeamDataManager {
         //create all the teams at once and add them to the array list
         soccerTeams.add(buildRSL());
         soccerTeams.add(buildPT());
+        soccerTeams.add(buildSS());
     }
 
     public SoccerTeam getSoccerTeam(int element){
@@ -70,5 +71,30 @@ public class TeamDataManager {
         timbers.addPlayer(darlington);
         return timbers;
     }//buildPT
+
+    //build an automatic team
+    private SoccerTeam buildSS(){
+        SoccerPlayer chad = new SoccerPlayer("Chad", "Barrett", "Forward", 19);
+        SoccerPlayer andres = new SoccerPlayer("Andres", "Correa", "Defender", 13);
+        SoccerPlayer brad = new SoccerPlayer("Brad", "Evans", "Defender", 3);
+        SoccerPlayer clint = new SoccerPlayer("Clint", "Dempsy", "Forward", 2);
+        SoccerPlayer andy = new SoccerPlayer("Andy", "Craven", "Forward", 99);
+        SoccerPlayer stefan = new SoccerPlayer("Stefan", "Frei", "Goalkeep", 24);
+        SoccerPlayer oniel = new SoccerPlayer("Oniel", "Fisher", "Midfield", 91);
+        SoccerPlayer erik = new SoccerPlayer("Erik", "Friberg", "Midfield", 28);
+        SoccerPlayer marco = new SoccerPlayer("Marco", "Pappa", "Midfield", 10);
+
+        SoccerTeam sounders = new SoccerTeam("Seattle Sounders");
+        sounders.addPlayer(chad);
+        sounders.addPlayer(andres);
+        sounders.addPlayer(brad);
+        sounders.addPlayer(clint);
+        sounders.addPlayer(andy);
+        sounders.addPlayer(stefan);
+        sounders.addPlayer(oniel);
+        sounders.addPlayer(erik);
+        sounders.addPlayer(marco);
+        return sounders;
+    }
 
 }//TeamDataManager

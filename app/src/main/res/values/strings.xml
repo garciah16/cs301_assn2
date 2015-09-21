@@ -3,7 +3,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_manager">ManagerActivity</string>
-    <string name="previous_team">previous</string>
+    <string name="previous_team">previous team</string>
     <string name="roster">Roster:</string>
     <string name="managerbtn">go to manager</string>
     <string name="nextteam">next team</string>

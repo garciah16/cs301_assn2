@@ -25,15 +25,6 @@ public class SoccerTeam {
         playersTable = new Hashtable<String, SoccerPlayer>();
         teamName = team;
     }
-//TODO: do i need this?
-//    //create a team with a pre-made Hashtable that contains the players
-//    public SoccerTeam(String team, Hashtable<String, SoccerPlayer> table){
-//        wins = 0;
-//        losses = 0;
-//        draws = 0;
-//        playersTable = table;
-//        teamName = team;
-//    }
 
     public int getWins(){
         return this.wins;
@@ -68,6 +59,7 @@ public class SoccerTeam {
         //turn the hashtable into a collection in order to convert to an array
         Collection<SoccerPlayer> playerCollection = playersTable.values();
         SoccerPlayer[] playerArray = playerCollection.toArray(new SoccerPlayer[playerCollection.size()]);
+
         //turn the array of players into a printable string for viewing on screen
         String playerRoster = "";
         for(int i = 0; i<playerCollection.size(); i++)

@@ -27,7 +27,8 @@
                 android:id="@+id/prevTeam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/previous_team" />
+                android:text="@string/previous_team"
+                android:onClick="onClickListenerPrev" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -40,7 +41,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/nextteam"
-                android:id="@+id/nextTeam" />
+                android:id="@+id/nextTeam"
+                android:onClick="onClickListenerNext" />
         </LinearLayout>
 
         <LinearLayout
@@ -84,26 +86,28 @@
                 android:layout_height="match_parent"
                 android:gravity="center_vertical|center_horizontal">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/roster"
+                    android:id="@+id/roster" />
+
                 <ScrollView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/scrollView" >
+                    android:id="@+id/scrollView"
+                    android:nestedScrollingEnabled="false">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/roster"
-                        android:id="@+id/roster" />
+                        android:layout_width="300dp"
+                        android:layout_height="400dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Small Text"
+                        android:id="@+id/teamMembers"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textSize="20sp" />
                 </ScrollView>
-
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="400dp"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Small Text"
-                    android:id="@+id/teamMembers"
-                    android:gravity="center_vertical|center_horizontal" />
 
             </LinearLayout>
 
