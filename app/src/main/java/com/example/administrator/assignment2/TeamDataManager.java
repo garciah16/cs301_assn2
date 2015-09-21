@@ -3,7 +3,8 @@ package com.example.administrator.assignment2;
 import java.util.ArrayList;
 
 /**
- * this class creates a few teams automatically to test the app functionality
+ * this class creates a few teams automatically to test the app functionality.
+ * also allows the user to add more teams to the list.
  * Created by garciah16 on 9/20/2015.
  */
 public class TeamDataManager {
@@ -21,6 +22,10 @@ public class TeamDataManager {
     public SoccerTeam getSoccerTeam(int element){
         return soccerTeams.get(element);
     }//getSoccerTeams
+
+    public void addTeam(SoccerTeam team){
+        soccerTeams.add(team);
+    }//addTeam
 
     //build an automatic team
     private SoccerTeam buildRSL(){
@@ -95,6 +100,6 @@ public class TeamDataManager {
         sounders.addPlayer(erik);
         sounders.addPlayer(marco);
         return sounders;
-    }
+    }//buildSS
 
 }//TeamDataManager

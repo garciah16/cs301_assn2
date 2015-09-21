@@ -7,4 +7,7 @@
     <string name="roster">Roster:</string>
     <string name="managerbtn">go to manager</string>
     <string name="nextteam">next team</string>
+    <string name="newTeam">Add New Team</string>
+    <string name="newPlayer">Add New Player</string>
+    <string name="add">add</string>
 </resources>
