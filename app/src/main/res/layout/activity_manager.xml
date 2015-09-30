@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/add"
-                android:id="@+id/button" />
+                android:id="@+id/addTeamButton" />
         </LinearLayout>
 
         <LinearLayout
@@ -86,10 +86,40 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight=".1" />
 
-            <Spinner
-                android:layout_width="127dp"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/teamSpinner" />
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/selectTeam"
+                    android:id="@+id/selectTeam" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UP"
+                    android:id="@+id/upButton" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/teamNameDisplay"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOWN"
+                    android:id="@+id/downButton" />
+
+            </LinearLayout>
 
             <Space
                 android:layout_width="20px"
@@ -141,7 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/add"
-                android:id="@+id/button2" />
+                android:id="@+id/addPlayerButton" />
 
         </LinearLayout>
     </LinearLayout>

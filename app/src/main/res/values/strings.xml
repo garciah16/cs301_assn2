@@ -10,4 +10,14 @@
     <string name="newTeam">Add New Team</string>
     <string name="newPlayer">Add New Player</string>
     <string name="add">add</string>
+    <string name="selectTeam">Select Team</string>
+    <string name="title_activity_game">GameActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="playgame">Play game</string>
+    <string name="goback">Go Back</string>
+    <string name="play">Play</string>
+    <string name="home">Home</string>
+    <string name="away">Away</string>
+    <string name="press_play">Press Play!</string>
 </resources>

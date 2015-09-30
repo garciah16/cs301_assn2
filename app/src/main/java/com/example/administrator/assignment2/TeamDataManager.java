@@ -23,6 +23,7 @@ public class TeamDataManager {
         return soccerTeams.get(element);
     }//getSoccerTeams
 
+
     public void addTeam(SoccerTeam team){
         soccerTeams.add(team);
     }//addTeam
